@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <section id="display">
+            <p id="lcdDisplay" class="noDisplay">88888888</p>
+            <p id="calcOutput"></p>
+        </section>
+
+        <section id="row1" class="numRow">
+            <div class="calcBtn" id="turnOnBtn">
+                <span class="btnText">ON</span>
+            </div>
+            <div class="calcBtn" id="clearBtn">
+                <span class="btnText">C</span>
+            </div>
+            <div class="calcBtn">
+                <span class="btnText">%</span>
+            </div>
+            <div class="calcBtn divide" data-key="/">
+                <span class="btnText">/</span>
+            </div>
+        </section>
+
+        <section id="row2" class="numRow">
+            <div class="calcBtn">
+                <span class="btnText">7</span>
+            </div>
+            <div class="calcBtn">
+                <span class="btnText">8</span>
+            </div>
+            <div class="calcBtn">
+                <span class="btnText">9</span>
+            </div>
+            <div class="calcBtn multiply" data-key="*">
+                <span class="btnText">*</span>
+            </div>
+        </section>
+
+        <section id="row3" class="numRow">
+            <div class="calcBtn">
+                <span class="btnText">4</span>
+            </div>
+            <div class="calcBtn">
+                <span class="btnText">5</span>
+            </div>
+            <div class="calcBtn">
+                <span class="btnText">6</span>
+            </div>
+            <div class="calcBtn substract" data-key="-">
+                <span class="btnText">-</span>
+            </div>
+        </section>
+
+        <section id="row4">
+            <section class="numCol">
+                <section class="numRow">
+                    <div class="calcBtn">
+                        <span class="btnText">1</span>
+                    </div>
+                    <div class="calcBtn">
+                        <span class="btnText">2</span>
+                    </div>
+                    <div class="calcBtn">
+                        <span class="btnText">3</span>
+                    </div>
+                </section>
+
+                <section class="numRow">
+                    <div class="calcBtn">
+                        <span class="btnText">0</span>
+                    </div>
+                    <div class="calcBtn">
+                        <span class="btnText">.</span>
+                    </div>
+                    <div class="calcBtn">
+                        <span class="btnText">=</span>
+                    </div>
+                </section>
+            </section>
+
+            <section class="plusCol">
+                <div class="calcBtn add" data-key="+" id="plusBtn">
+                    <span class="btnText">+</span>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2022 praxeds</p>
+        <a href="https://github.com/praxeds" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+        </a>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
